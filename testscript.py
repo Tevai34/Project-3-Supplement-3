@@ -11,10 +11,10 @@ class TestDownloadFunctions(unittest.TestCase):
         # Call the download function
         download_file(test_url, destination)
         
-        # Check if the file now exists on your computer
+        # Check if the file exists on your computer
         self.assertTrue(os.path.exists(destination))
         
-        # Clean up: delete the file after the test
+        # Clean up the deleted file after the test
         os.remove(destination)
         
 if __name__ == "__main__":
