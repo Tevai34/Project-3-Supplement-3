@@ -32,6 +32,10 @@ def multithread_download(urls):
         
 if __name__=="__main__":
     urls = sys.argv[1:]
+    # Check if URL was provided
     if not urls:
         print("Please add at least one URL as a command line argument.")
         sys.exit()
+    # Start downloading files using multithreading 
+    print("Starting multithreaded downloads")
+    multithread_download(urls)
